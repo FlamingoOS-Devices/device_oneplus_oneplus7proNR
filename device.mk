@@ -9,6 +9,9 @@ $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oneplus/oneplus7proNR/oneplus7proNR-vendor.mk)
 
+# Inherit Google Carrier Settings (for out of box 5g support).
+$(call inherit-product, ${LOCAL_PATH}/carriersettings.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     Flamingooneplus7proNRFrameworks \
