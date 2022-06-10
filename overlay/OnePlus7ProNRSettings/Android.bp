@@ -13,7 +13,7 @@
 // limitations under the License.
 
 runtime_resource_overlay {
-    name: "OnePlus7ProSettingsProvider",
+    name: "oneplus7proNRSettings",
     sdk_version: "current",
     device_specific: true,
 }

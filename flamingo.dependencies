@@ -4,7 +4,7 @@
     "target_path" : "device/oneplus/sm8150-common"
   },
   {
-    "repository"  : "vendor_oneplus_oneplus7pro",
-    "target_path" : "vendor/oneplus/oneplus7pro"
+    "repository"  : "vendor_oneplus_oneplus7proNR",
+    "target_path" : "vendor/oneplus/oneplus7proNR"
   }
 ]

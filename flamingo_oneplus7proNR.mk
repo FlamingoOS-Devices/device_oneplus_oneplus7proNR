@@ -13,21 +13,21 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (flamingo_oneplus7pro,$(TARGET_PRODUCT))
+ifeq (flamingo_oneplus7proNR,$(TARGET_PRODUCT))
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from the custom device configuration.
-$(call inherit-product, device/oneplus/oneplus7pro/device.mk)
+$(call inherit-product, device/oneplus/oneplus7proNR/device.mk)
 
 # Inherit from the AOSPA configuration.
 $(call inherit-product, vendor/flamingo/target/product/flamingo.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := flamingo_oneplus7pro
-PRODUCT_DEVICE := oneplus7pro
+PRODUCT_NAME := flamingo_oneplus7proNR
+PRODUCT_DEVICE := oneplus7proNR
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := GM1917
 PRODUCT_MANUFACTURER := OnePlus
@@ -37,11 +37,11 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 # Boot animation resolution.
 TARGET_BOOT_ANIMATION_RES := 1440
 
-PRODUCT_SYSTEM_NAME := OnePlus7Pro
-PRODUCT_SYSTEM_DEVICE := OnePlus7Pro
+PRODUCT_SYSTEM_NAME := oneplus7proNR
+PRODUCT_SYSTEM_DEVICE := oneplus7proNR
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=OnePlus7Pro \
-    TARGET_PRODUCT=OnePlus7Pro
+    TARGET_DEVICE=oneplus7proNR \
+    TARGET_PRODUCT=oneplus7proNR
 
 endif

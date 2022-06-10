@@ -11,10 +11,10 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="android.oneplus7pro">
+    package="com.android.systemui.oneplus7proNR">
 
     <overlay
         android:isStatic="true"
         android:priority="800"
-        android:targetPackage="android" />
+        android:targetPackage="com.android.systemui" />
 </manifest>
